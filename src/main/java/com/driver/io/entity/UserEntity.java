@@ -1,5 +1,7 @@
 package com.driver.io.entity;
 
+import lombok.*;
+
 import java.io.Serializable;
 
 import javax.persistence.Column;
@@ -8,7 +10,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity(name = "users")
-public class UserEntity{
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class UserEntity implements Serializable{
 
 	@Id
 	@GeneratedValue

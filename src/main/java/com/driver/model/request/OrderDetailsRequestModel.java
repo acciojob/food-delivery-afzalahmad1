@@ -1,5 +1,9 @@
 package com.driver.model.request;
 
+import lombok.Builder;
+import lombok.experimental.UtilityClass;
+
+@Builder
 public class OrderDetailsRequestModel {
 
 	private String[] items;
